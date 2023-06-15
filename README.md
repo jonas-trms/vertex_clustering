@@ -6,6 +6,10 @@ This algorithm is based on the paper [_Multi-resolution 3D approximations for re
 ## Principle
 The space is divided into cubes of chosen volume, then the vertices of each cube are merged into a single representative, thus reducing the number of vertices of the initial mesh. 
 
+![principle of vertex clustering](https://i.imgur.com/XyugVjA.png) 
+
+_An illustration of this principle: the original mesh is black, and the reduced one is green._
+
 ## Implementation
 Two methods are implemented for the computation of the representative : the average point and the median point. 
 
@@ -21,6 +25,7 @@ $ gcc -o vertex_clustering main.c computations.c median.c output.c structure_ope
 ```
 ## Usage
 This implementation expects triangular `.obj` files formatted in a specific way (see [Format](#format)). Here's how to use it:
+
 `./main [args]` reduces the provided mesh using the described algorithm. Arguments:
  * `initial` is the path to the `.obj` file to be reduced.
  * `reduction` is the path to the reduced `.obj` file.
@@ -69,3 +74,6 @@ f 2 3 7
 ## Example of usage
 ![initial mesh](https://i.imgur.com/B2rGz0O.png) ![reduced mesh](https://i.imgur.com/5YGgHsC.png) \
 The number of vertices was divided by `4` (the initial mesh is on the left) and the render time therefore divided by `2`, without any noticeable difference on the final image.
+
+## Attributions
+The image illustrating the principle of vertex clustering is a modified version of an image coming from [_Multi-resolution 3D approximations for rendering complex scenes_](https://doi.org/10.1007/978-3-642-78114-8_29).
