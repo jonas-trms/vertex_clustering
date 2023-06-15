@@ -68,4 +68,4 @@ f 2 3 7
 ```
 ## Example of usage
 ![initial mesh](https://i.imgur.com/B2rGz0O.png) ![reduced mesh](https://i.imgur.com/5YGgHsC.png) \
-The number of vertices was divided by 4 (the initial mesh is on the left), and the render time therefore divided by 2, without any noticeable difference on the final image.
+The number of vertices was divided by `4` (the initial mesh is on the left), and the render time therefore divided by `2`, without any noticeable difference on the final image.
