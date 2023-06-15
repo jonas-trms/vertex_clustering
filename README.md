@@ -16,7 +16,7 @@ $ gcc -o vertex_clustering main.c computations.c median.c output.c structure_ope
 # Execution
 Meshes must be in OBJ format.
 
-Arguments: input path, output path, method (```a``` for average, ```m``` for median), desired reduction factor, acceptable error on the reduction factor.
+Arguments: input path, output path, method (`a` for average, `m` for median), desired reduction factor, acceptable error on the reduction factor.
 
 # Example
 ```
