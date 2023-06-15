@@ -7,7 +7,7 @@ This algorithm is based on the paper [_Multi-resolution 3D approximations for re
 The space is divided into cubes of chosen volume, then the vertices of each cube are merged into a single representative, thus reducing the number of vertices of the initial mesh. 
 
 ## Implementation
-Two methods are implemented for the computation of the representative : the average point and the median point. The algorithm makes several attemps, changing the volume of the cubes, until the chosen reduction factor or a minimum is reached.
+Two methods are implemented for the computation of the representative : the average point and the median point. The requiered volume of the cubes for a chosen reduction factor can only be estimated: since the vertices are often not uniformly distributed, some cubes won't contain any vertex, and the reduction factor will therefore be too high. On that account, the algorithm makes several attemps, increasing the volume of the cubes, until the chosen reduction criteria is met, or a minimum is reached.
 
 This implementation is very fast and provides good simplifications for simple meshes, but it may not preserve the details of complex meshes.
 
@@ -24,7 +24,7 @@ This implementation expects triangular `.obj` files formatted in a specific way 
  * `reduction` is the path to the reduced `.obj` file.
  * `method` is the chosen method for the compuration of the representative. Either `average` or `median`
  * `factor` is a `float` value and is equal to the desired reduction factor.
- * `error` is a `float` value and is equal to the acceptable error on the reduction factor (several attemps will often be requiered not to reduce the mesh too much, thus getting a better precision will often last longer).
+ * `error` is a `float` value and is equal to the acceptable error on the reduction factor (several attemps will often be requiered to get a low error, thus making the execution longer).
 
 Example:
 
