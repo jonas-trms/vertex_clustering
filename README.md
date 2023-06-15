@@ -11,7 +11,7 @@ Two methods are implemented for the computation of the representative : the aver
 
 The requiered volume of the cubes for a chosen reduction factor can only be estimated: since the vertices are often not uniformly distributed, some cubes won't contain any vertex, and the reduction factor will therefore be too high. On that account, the algorithm makes several attemps, increasing the volume of the cubes, until the chosen reduction criteria is met, or a minimum is reached.
 
-This implementation is very fast and provides good simplifications for simple meshes, but it may not preserve the details of complex meshes.
+This algorithm is very fast and provides good simplifications for simple meshes, but it may not preserve the details of complex meshes.
 
 ## Compilation
 You can compile with GCC by running the following command:
