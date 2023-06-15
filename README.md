@@ -3,7 +3,8 @@ This algorithm is based on the paper _Multi-resolution 3D approximations for ren
 
 The space is divided into cubes of chosen volume, then the vertices of each cube are merged into a single representative, thus reducing the number of vertices of the initial mesh. 
 
-Two methods are implemented for the computation of the representative : the average point, or the median point. The algorithm makes several attemps changing the cubes volume, until the reduction criteria is met, or a minimum is reached \
+Two methods are implemented for the computation of the representative : the average point, or the median point. The algorithm makes several attemps changing the cubes volume, until the reduction criteria is met, or a minimum is reached
+
 This implementation is very fast and provides good simplifications for simple meshes, but it may not preserve the details of complex meshes.
 
 # Execution
