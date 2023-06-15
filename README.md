@@ -1,5 +1,5 @@
 # A mesh simplification algorithm based on vertex clustering
-This algorithm is based on the paper [_Multi-resolution 3D approximations for rendering complex scenes_](https://doi.org/10.1007/978-3-642-78114-8_29) by J. Rossignac, P.Borel.
+This algorithm is based on the paper [_Multi-resolution 3D approximations for rendering complex scenes_](https://doi.org/10.1007/978-3-642-78114-8_29) by J.Rossignac, P.Borel.
 
 The space is divided into cubes of chosen volume, then the vertices of each cube are merged into a single representative, thus reducing the number of vertices of the initial mesh. 
 
