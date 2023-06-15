@@ -8,7 +8,7 @@ The space is divided into cubes of chosen volume, then the vertices of each cube
 
 ![principle of vertex clustering](https://i.imgur.com/XyugVjA.png) 
 
-_An illustration of this principle: the original mesh is black, and the reduced one is green._
+_An illustration of this principle: the original mesh is black, the reduced one is green._
 
 ## Implementation
 Two methods are implemented for the computation of the representative : the average point and the median point. 
