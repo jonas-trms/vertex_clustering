@@ -21,12 +21,12 @@ This algorithm is very fast and provides good simplifications for simple meshes,
 You can compile with GCC by running the following command:
 
 ```
-$ gcc -o vertex_clustering main.c computations.c median.c output.c structure_operations.c -lm
+$ gcc -o vertex_clustering src/main.c src/computations.c src/median.c src/output.c src/structure_operations.c -lm
 ```
 ## Usage
 This implementation expects triangular `.obj` files formatted in a specific way (see [Format](#format)). Here's how to use it:
 
-`./main [args]` reduces the provided mesh using the described algorithm. Arguments:
+`./vertex_clustering [args]` reduces the provided mesh using the described algorithm. Arguments:
  * `initial` is the path to the `.obj` file to be reduced.
  * `reduction` is the path to the reduced `.obj` file.
  * `method` is the chosen method for the compuration of the representative. Either `average` or `median`
