@@ -1,5 +1,5 @@
 # A mesh simplification algorithm based on vertex clustering
-![initial mesh vs reduced mesh](https://i.imgur.com/6Cei7be.png)
+![initial mesh](https://i.imgur.com/HXTQ9VP.png) ![reduced mesh](https://i.imgur.com/bi81znh.png)
 
 This algorithm is based on the paper [_Multi-resolution 3D approximations for rendering complex scenes_](https://doi.org/10.1007/978-3-642-78114-8_29) by J. Rossignac, P. Borel.
 
