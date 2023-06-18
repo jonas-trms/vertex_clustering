@@ -31,7 +31,7 @@ This implementation expects triangular `.obj` files formatted in a specific way 
  * `reduction` is the path to the reduced `.obj` file.
  * `method` is the chosen method for the compuration of the representative. Either `average` or `median`
  * `factor` is a `float` value equal to the desired reduction factor.
- * `error` is a `float` value equal to the acceptable error on the reduction factor (several attemps will often be requiered to get a low error, thus making the execution longer).
+ * `error` is a `float` value equal to the acceptable error on the reduction factor (several attemps will often be requiered to get a lower error, thus making the execution longer).
 
 Example:
 
