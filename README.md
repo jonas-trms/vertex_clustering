@@ -18,7 +18,7 @@ The requiered volume of the cubes for a chosen reduction factor can only be esti
 This algorithm is very fast and provides good simplifications for simple meshes, but it may not preserve the details of complex meshes.
 
 ## Compilation
-You can compile with GCC by running the following command:
+You can compile with `gcc` by running the following command:
 
 ```
 $ gcc -o vertex_clustering src/main.c src/computations.c src/median.c src/output.c src/structure_operations.c -lm
